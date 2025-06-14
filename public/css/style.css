@@ -1,0 +1,1574 @@
+/* mengatur variable warna */
+:root{
+    --Neutral_White: #FFFFFF;
+    --Neutral_Black: #03200D;
+
+    --BG_Input_NonAktif: #F0F0F0;
+    --BG_Button_Normal: #EBA144;
+    --BG_Button_Hover: #FCB65E;
+    --BG_Button_Klik: #F49721;
+
+    --Teks_Button: #000000;
+    --Teks_Navbar_Label: #1F3A68; 
+
+    --Input_Placholder: #A7A6A6;
+
+    --Border_Input_Normal: #B8C7B2;
+    --Border_Input_Focus: #F09829;
+
+    --BG_Utama: #107C6B;
+    --BG_Navbar_Container: #D1E8EE;
+}
+
+/* mengatur font */
+@font-face {
+    font-family: Bold;
+    src: url(/assets/font/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: SemiBold;
+    src: url(/assets/font/JosefinSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Regular;
+    src: url(/assets/font/JosefinSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Light;
+    src: url(/assets/font/Inter-JosefinSans-Light.ttf);
+}
+
+/* Mengatur Navbar, Footer, dan Body */
+nav{
+    background-color: var(--BG_Navbar_Container);
+    font-family: SemiBold;
+}
+
+.nav-item1{
+    width: 110px;
+    height: 25px;
+    left: 450px;
+    top: 38px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--Teks_Navbar_Label);
+    margin-right: 2px;
+}
+.nav-item2{
+    width: 110px;
+    height: 25px;
+    left: 450px;
+    top: 38px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--Teks_Navbar_Label);
+    margin-right: 45px;
+}
+
+.nav-item3{
+    width: 110px;
+    height: 25px;
+    left: 450px;
+    top: 38px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--Teks_Navbar_Label);
+    margin-right: 6px;
+}
+
+.nav-item4{
+    width: 110px;
+    height: 25px;
+    left: 450px;
+    top: 38px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--Teks_Navbar_Label);
+    margin-right: -2px;
+}
+
+.nav-item5{
+    width: 110px;
+    height: 25px;
+    left: 450px;
+    top: 38px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: var(--Teks_Navbar_Label);
+    margin-right: 10px;
+}
+
+.btn-outline-warning{
+    margin-left: 150px;
+    width: 150px;
+    height: 50px;
+    color: var(--Teks_Navbar_Label);
+
+    padding-top: 50px;
+}
+
+footer{
+    width: 100%;
+    height: 85px;
+    background-color: var(--BG_Navbar_Container);
+    color: var(--Teks_Button);
+    font-family: SemiBold;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 30px;
+    bottom: 0;
+}
+
+body{
+    background-color: var(--BG_Utama);
+}
+
+/* Bagian Tampilan Awal (Sign Up dan Log In) */
+
+/* Tampilan Awal */
+.container-awal{
+    width: 100%;
+    height: 100%;
+}
+
+.gambar-awal{
+    margin: 166px auto;
+}
+
+.button-signup-login{
+    margin-left: 700px;
+}
+
+.signup-awal {
+    position: absolute;
+    width: 425px;
+    height: 80px;
+    left: 814px;
+    top: 414px;
+    
+    border-radius: 30px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+    
+    font-family: SemiBold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1rem;
+
+    margin-top: 80px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.login-awal{
+    position: absolute;
+    width: 425px;
+    height: 80px;
+    left: 814px;
+    top: 596px;
+    border-radius: 30px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+    
+    font-family: SemiBold;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 1rem;
+
+    margin-top: 80px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+a.btn.btn-signup{
+    width: fit-content;
+    height: fit-content;
+
+    font-family: 'Bold';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+a.btn.btn-login{
+    width: fit-content;
+    height: fit-content;
+    
+    font-family: 'Bold';
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    }
+
+/* Untuk hover dan active seluruh button */
+.signup-awal:hover, .login-awal:hover, .signup-guru-siswa:hover, .button-daftar:hover, .button-login:hover, .button-logout:hover, .button-melihat-inovasi:hover, .button-membuat-inovasi:hover, .button-cari:hover, .button-cek-inovasi:hover, .lks-contohsoal:hover, .lks-buatsoal:hover, .button-contoh-soal:hover, .button-unggah-soal:hover, .button-simpan-soal:hover, .buttonKurikulum:hover, .buttonMateri:hover{
+    background-color: var(--BG_Button_Hover);
+}
+
+.signup-awal:active, .login-awal:active, .signup-guru-siswa, .button-daftar:active, .button-login:active, .button-logout:active, .button-melihat-inovasi:active, .button-membuat-inovasi:active, .button-cari:active, .button-cek-inovasi:active, .lks-contohsoal:active, .lks-buatsoal:active, .button-contoh-soal:active, .button-unggah-soal:active, .button-simpan-soal:active, .buttonKurikulum:active, .buttonMateri:active{
+    background-color: var(--BG_Button_Klik);
+}
+
+
+/* Bagian Sign Up Memilih Antara Guru dan Siswa */
+.pad-container{
+    width: 1070px;
+    height: 400px;
+    background-color: var(--BG_Navbar_Container);
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 55px auto;
+}
+
+.awal-guru{
+    float: left;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.awal-siswa{
+    float: right;
+    margin-right: 150px;
+    margin-top: 50px;
+}
+
+.signup-guru-siswa{
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-family: SemiBold;
+    font-size: 30px;
+    text-align: center;
+
+    margin: 15px 0px 10px 30px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.pad-container-guru-siswa{
+    width: 1070px;
+    height: 700px;
+    background-color: var(--BG_Navbar_Container);
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 55px auto;
+}
+
+.kiri-guru, .kiri-siswa{
+    float: left;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.kanan-guru, .kanan-siswa{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    float: right;
+    margin: 50px 550px;
+}
+
+/* Format Sign Up */
+.bagian-judul{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    width: 488px;
+
+    font-family: SemiBold;
+    font-size: 25px;
+    color: var(--Teks_Navbar_Label);
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+.nama-lengkap, .email, .password-login{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin: 12px 0px;
+}
+
+.nip-bidjar, .password{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+
+    width: 488px;
+    height: 84px;
+    
+    column-gap: 24px;
+
+    margin: 12px 0px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    width: 100%;
+
+    margin: 12px auto;
+}
+
+.text-label{
+    display: flex;
+
+    font-family: Regular;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--Teks_Navbar_Label)
+}
+
+input{
+    display: flex;
+    padding: 18px;
+    margin-bottom: 24px;
+    row-gap: 120px;
+
+    border-radius: 5px;
+    background-color: var(--BG_Input_NonAktif);
+    border: solid 2px var(--BG_Input_NonAktif);
+
+    width: 100%;
+    height: 40px;
+
+    font-size: 18px;
+    color: var(--Input_Placholder);
+    
+    outline-style: none;
+    transition: all ease-in-out 175ms;   
+}
+
+input:focus, textarea:focus{
+    background-color: var(--BG_Input_NonAktif);
+    border: solid 2px var(--Border_Input_Focus);
+}
+
+input:not(:placeholder-shown), textarea:not(:placeholder-shown){ 
+    background-color: var(--Neutral_White);
+    color: var(--Neutral_Black);
+}
+
+.button-daftar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 48px 170px;
+
+    background-color: var(--BG_Button_Normal);
+    border-radius: 10px;
+
+    width: 150px;
+    height: 60px;
+    left: 56px;
+    top: 575.5px;
+
+    font-family: SemiBold;
+    font-size: 25px;
+    color: var(--Neutral_White);
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px lightgrey;
+}
+
+
+/* Bagian Log In */
+.pad-container-login{
+    width: 1070px;
+    height: 425px;
+    background-color: var(--BG_Navbar_Container);
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 55px auto;
+    padding-top: 50px;
+}
+
+.gambar-login{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+}
+
+.gambar-login1{
+    margin-left: 1020px;
+}
+
+.gambar-login2{
+    margin-top: 250px;
+}
+
+.bagian-judul-login{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    font-family: SemiBold;
+    font-size: 25px;
+    color: var(--Teks_Navbar_Label);
+
+    text-align: center;
+}
+
+.bagian-isi-login{
+    display: flex;
+    flex-direction: column;
+
+    width: 800px;
+    height: 400px;   
+    
+    margin: 0 auto;
+}
+
+.button-login, .button-logout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+
+    background-color: var(--BG_Button_Normal);
+    border-radius: 10px;
+
+    width: 150px;
+    height: 60px;
+    left: 56px;
+    top: 575.5px;
+
+    font-family: SemiBold;
+    font-size: 25px;
+    color: var(--Neutral_White);
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+    box-shadow: 7px 7px 5px lightgrey;
+}
+
+/* Bagian User */
+.pad-container-user{
+    width: 1070px;
+    height: 700px;
+    background-color: var(--BG_Navbar_Container);
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 55px auto;
+    padding-top: 50px;
+}
+
+.gambar-user{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bagian-user{
+    display: flex;
+    flex-direction: column;
+
+    width: 900px;
+    height: 600px;   
+    
+    margin: 0 auto;
+}
+
+.bagian-user .text-label{
+    margin-top: 12px;
+    width: 190px;
+}
+
+.input-user{
+    display: flex;
+    flex-direction: row;
+    row-gap: 12px;
+    width: 100%;
+
+    margin: 12px 50px 12px 0;
+}
+
+.nip , .bidjar, .password-user{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+/* Bagian Home */
+.pad-container-home{
+    width: 1070px;
+    height: 600px;
+    background-color: var(--BG_Navbar_Container);
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 55px auto;
+}
+
+.kiri-home{
+    float: left;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.kanan-home{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    font: Regular;
+    text-align: justify;
+
+    padding: 150px 200px 50px 550px;
+}
+
+/* Bagian Kurikulum */
+/* Tampilan awal bagian kurikulum */
+.judulkurikulum .h1{
+    font-family: Bold;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    color: var(--Neutral_White);
+    margin-top: 56px;
+}
+
+.kurikulum{
+    font-family: Bold;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 60px 479px 60px 34px;
+    width: 1200px;
+    height: 150px;
+    left: 106px;
+    top: 238px;
+    background-color: var(--BG_Navbar_Container);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 500px;
+}
+
+.buttonKurikulum button{
+    width: 140px;
+    height: 20px;
+    left: 1130px;
+    top: 303px;
+    margin : 30px 1000px 50px 0px;
+
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 1100px;
+    top: 288px;
+    background: var(--BG_Button_Normal);
+    border-radius: 10px;
+    padding: 15px 30px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+    border: none;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--Teks_Button);
+    
+}
+
+/* Bagian Post Kurikulum */
+#judul{
+    color: var(--Teks_Button);
+    position: absolute;
+    width: 1100px;
+    height: 40px;
+    left: 182px;
+    top: 188px;
+
+    margin-right: 150px;
+    margin-left: -45px;
+
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+
+    text-align: center;
+}
+
+.backWhite #judul{
+    text-align: center;
+}
+
+.backWhite{
+    position: inline-block;
+    width: 1150px;
+    height: 1726px;
+    left: 37px;
+    top: 132px;
+
+    margin: 50px auto;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.daftarIsiKurikulum{
+    background: var(--BG_Button_Normal);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 71px;
+    margin-top: 30px;
+
+    position: absolute;
+    width: 415px;
+    height: 295px;
+    left: 108px;
+    top: 268px;
+    color: var(--Teks_Navbar_Label);
+}
+
+.daftarIsiKurikulum h4{
+    margin-left: 34px;
+    margin-top : 25px;
+    font-size: 30px;
+
+    font-family: Bold;
+}
+
+.daftarIsiKurikulum ol li{
+    margin-left: 35px;
+    margin-top: 10px;
+    font-family: Regular;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.backWhite .daftarIsiKurikulum{
+    position: absolute;
+    width: 415px;
+    height: 295px;
+    left: 108px;
+    top: 268px;
+}
+
+#logoKurikulum {
+    position: absolute;
+    width: 250px;
+    height: 252.06px;
+    left: 960px;
+    top: 299px;
+
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.kontenKurikulum{
+    position: absolute;
+    margin-top: 520px;
+    
+}
+
+.kontenKurikulum ol li{
+    width: 340px;
+    height: 30px;
+    left: 108px;
+    top: 636px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 25px;
+    color: var(--Teks_Button);
+    margin-left: 51px;
+
+    font-family: Bold;
+}
+
+.kontenKurikulum p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 50px;
+    width : 1000px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+
+    font-family: Regular;
+}
+
+
+/* Bagian Materi */
+
+/* Awal Materi */
+.boxMateri {
+    position: inline-block;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    width: 1100px;
+    height: 600px;
+    left: 95px;
+    top: 212px;
+
+    background: var(--BG_Navbar_Container);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    margin: 115px auto;
+}
+
+#carouselExampleCaptions{
+    position: absolute;
+    width: 925px;
+    height: 250px;
+    left: 220px;
+    top: 262px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));   
+    margin: 15px auto;
+}
+
+.materi{
+    position: absolute;
+    font-style: normal;
+    color: var(--Teks_Button);
+    margin-left: 121px;
+    margin-top: 350px;
+}
+
+.materi h3{
+    font-family: Bold;
+    width: 400px;
+    height: 30px;
+    left: 220px;
+    top: 564px;
+
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.materi ul li{
+    font-family: Regular;
+    width: 215px;
+    height: 27px;
+    left: 220px;
+    top: 618px;
+
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+.buttonMateri button{
+
+    width: 270px;
+    height: 70px;
+    left: 922px;
+    top: 587px;
+    background: var(--BG_Button_Normal);
+    border-radius: 10px;
+    padding: 15px 30px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+    border: none;
+    float: left;
+    margin-left: -80px;
+    position: absolute;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    color: var(--Teks_Button);
+}
+
+/* Bagian List Materi */
+
+.listMateri1{
+    width: 1100px;
+    height: 80px;
+    left: 95px;
+    background: var(--BG_Navbar_Container);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+}
+
+.listMateri1 a:link, a:visited{
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    margin-left: 450px;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 10px;
+    color: var(--Teks_Button);
+    padding: 32px 15px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.listMateri2{
+    width: 1100px;
+    height: 80px;
+    left: 95px;
+    background: var(--BG_Navbar_Container);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+}
+
+.listMateri2 a:link, a:visited{
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    margin-left: 450px;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 10px;
+    color: var(--Teks_Button);
+    padding: 32px 15px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.listMateri3{
+    width: 1100px;
+    height: 80px;
+    left: 95px;
+    background: var(--BG_Navbar_Container);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+}
+
+.listMateri3 a:link, a:visited{
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    margin-left: 450px;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 10px;
+    color: var(--Teks_Button);
+    padding: 32px 15px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.listMateri4{
+    width: 1100px;
+    height: 80px;
+    left: 95px;
+    background: var(--BG_Navbar_Container);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+}
+
+.listMateri4 a:link, a:visited{
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    margin-left: 450px;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 10px;
+    color: var(--Teks_Button);
+    padding: 32px 15px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.listMateri5{
+    width: 1100px;
+    height: 80px;
+    left: 95px;
+    background: var(--BG_Navbar_Container);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+}
+
+.listMateri5 a:link, a:visited{
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    margin-left: 450px;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 10px;
+    color: var(--Teks_Button);
+    padding: 32px 15px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.listMateri6{
+    width: 1100px;
+    height: 80px;
+    left: 95px;
+    background: var(--BG_Navbar_Container);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-bottom: 50px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+}
+
+.listMateri6 a:link, a:visited{
+    text-align: center;
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    margin-left: 450px;
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 10px;
+    color: var(--Teks_Button);
+    padding: 32px 15px;
+    transform: all ease-in-out 175 ms;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Bagian Isi Materi */
+.IsiMateri1, .IsiMateri2, .IsiMateri3, .IsiMateri4, .IsiMateri5, .IsiMateri6{
+    width: 1120px;
+    height: 1800px;
+    left: 37px;
+    top: 132px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+
+.IsiMateri1 #judul1, .IsiMateri2 #judul2, .IsiMateri3 #judul3, .IsiMateri4 #judul4, .IsiMateri5 #judul5, .IsiMateri6 #judul6{
+    font-family: Bold;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: var(--Teks_Button);
+    width: 350px;
+    height: 40px;
+    left: 569px;
+    top: 192px;
+    margin-top: 60px;
+    text-align: center;
+    margin-left: 400px;
+    margin-bottom: 48px;
+}
+
+.IsiMateri1 #Konten1, .IsiMateri2 #Konten2, .IsiMateri3 #Konten3, .IsiMateri4 #Konten4, .IsiMateri5 #Konten5, .IsiMateri6 #Konten6{
+    position: inline-block;
+    margin: 10px auto;
+    width: 1000px;
+    height: 910px;
+    left: 127px;
+    top: 280px;
+    font-family: Regular;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 0.08em;
+    color: var(--Teks_Button);
+}
+
+
+/* Bagian LKS */
+
+/* Tampilan Awal LKS */
+.konten{
+    width: 100%;
+    height: 620px;
+}
+
+.pad-container1{
+    width: 503px;
+    height: 316px;
+    float: left;
+    background-color: var(--BG_Navbar_Container);
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px lightgrey;
+    margin: 10% auto 20%;
+}
+
+.pad-container2{
+    width: 503px;
+    height: 316px;
+    float: right;
+    background-color: var(--BG_Navbar_Container);
+    border-radius: 30px;
+    box-shadow: 7px 7px 5px lightgrey;
+    margin: 10% auto 20%;
+}
+
+.gambar-guru-contohsoal{
+    margin-left: 25%;
+    margin-top: -10%;
+}
+
+.gambar-guru-buatsoal{
+    margin-left: 35%;
+}
+
+.lks-contohsoal, .lks-buatsoal{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-family: SemiBold;
+    font-size: 30px;
+    text-align: center;
+
+    margin: 15px 0px 10px 150px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+/* Contoh Soal LKS */
+
+.top-contoh-soal{
+    display: flex;
+    position: relative;
+
+    column-gap: 24px;
+
+    margin: 12px 0px;
+
+    font-family: Bold;
+}
+
+.judul-contoh-soal{
+    width: 415px;
+}
+
+.search-contoh-soal{
+    margin-left: 300px;
+}
+
+.form {
+    width:500px;
+    margin:50px auto;
+
+    flex-direction: column;
+}
+
+.search {
+    width: 375px;
+    height: 45px;
+    border-radius: 100px;
+
+    padding:8px 15px;
+    background: var(--BG_Input_NonAktif);
+    border: 0px solid #dbdbdb;
+}
+
+.button-cari {
+    width: 125px;
+    height: 50px;
+    border-radius: 10px;
+
+    position: relative;
+    padding :6px 40px;
+    left: -8px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+
+    font-size: 18px;
+
+    margin-left: 400px;
+    margin-top: -50px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.pad-list-contoh-soal{
+    width: 100%;
+    height: 150px;
+    background-color: var(--BG_Navbar_Container);
+    color: var(--Teks_Button);
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 20px 0 30px 0;
+    padding: 30px;
+
+    font-family: Bold;
+}
+
+.contoh-soal-top, .contoh-soal-bottom{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    
+    column-gap: 660px;
+
+    margin-bottom: 10px;
+}
+
+.contoh-soal-bottom .h5{
+    width: 100%;
+}
+
+.button-contoh-soal{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-size: 20px;
+    text-align: center;
+
+    margin: -10px 0px 50px -50px;
+    padding: 8px 40px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+/* Membuat Soal LKS */
+.membuat-atas{
+    display: flex;
+    flex-direction: column;
+
+    width: 100px;
+    height: 100%;  
+}
+
+.membuat-atas .text-label{
+    margin-top: 12px;
+    width: 185px;
+}
+
+.judul-matpel, .materi-matpel{
+    margin-bottom: 20px;
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.input-soal{
+    display: flex;
+    flex-direction: row;
+    row-gap: 12px;
+    width: 1120px;
+    height: 40px;
+
+    margin: 12px 50px 12px 0;
+}
+
+.membuat-bawah{
+    margin-top: 24px;
+
+    font-family: Bold;
+}
+
+.button-unggah-soal, .button-simpan-soal{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+    padding: 8px;
+
+    font-family: Bold;
+    font-size: 20px;
+    text-align: center;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.button-simpan-soal{
+    margin-left: 920px;
+}
+
+
+/* Bagian Inovasi */
+
+/* Inovasi Awal */
+.pad-container-inovasi{
+    width: 1070px;
+    height: 400px;
+
+    margin: 55px auto;
+    text-align: center;
+}
+
+.melihat-inovasi, .membuat-inovasi{
+    background-color: var(--BG_Navbar_Container);
+    width: 500px;
+    height: 315px;
+    border-radius: 15px;
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 0 auto;
+    padding-top: 5px;
+
+    text-align: center;
+}
+
+.melihat-inovasi{
+    float: left;
+    margin-top: 50px;
+}
+
+.membuat-inovasi{
+    float: right;
+    margin-top: 50px;
+}
+
+.button-melihat-inovasi, .button-membuat-inovasi{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-family: SemiBold;
+    font-size: 30px;
+
+    margin: 15px 0px 10px 150px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+/* Bagian Melihat Inovasi */
+.top-melihat-inovasi{
+    display: flex;
+    position: relative;
+
+    column-gap: 24px;
+
+    margin: 12px 0px;
+
+    font-family: Bold;
+}
+
+.judul-melihat-inovasi{
+    width: 415px;
+}
+
+.search-inovasi{
+    margin-left: 300px;
+}
+
+.form {
+    width:500px;
+    margin:50px auto;
+
+    flex-direction: column;
+}
+
+.search {
+    width: 375px;
+    height: 45px;
+    border-radius: 100px;
+
+    padding:8px 15px;
+    background: var(--BG_Input_NonAktif);
+    border: 0px solid #dbdbdb;
+}
+
+.button-cari {
+    width: 125px;
+    height: 50px;
+    border-radius: 10px;
+
+    position: relative;
+    padding :6px 40px;
+    left: -8px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+
+    font-size: 18px;
+
+    margin-left: 400px;
+    margin-top: -50px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.pad-list-inovasi{
+    width: 100%;
+    height: 150px;
+    background-color: var(--BG_Navbar_Container);
+    color: var(--Teks_Button);
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 20px 0 30px 0;
+    padding: 30px;
+
+    font-family: Bold;
+}
+
+.inovasi-top, .inovasi-bottom{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    
+    column-gap: 660px;
+
+    margin-bottom: 20px;
+}
+
+.button-cek-inovasi{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-size: 20px;
+
+    margin: -40px 0px 10px 818px;
+    padding: 8px 40px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.pad-container-isi-inovasi{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--Neutral_White);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    margin: 30px auto;
+    padding: 30px;
+}
+
+.button-download-inovasi{
+    position: fixed;
+
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-size: 20px;
+
+    margin: 20px 0px 10px 0px;
+    padding: 8px 45px;
+
+    font-family: Bold;
+    font-size: 20px;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.teks-atas{
+    text-align: center;
+    margin: 50px;
+}
+
+.content-isi-inovasi{
+    text-align:justify;
+}
+
+.membuat-atas{
+    display: flex;
+    flex-direction: column;
+
+    width: 100px;
+    height: 100%;  
+}
+
+.membuat-atas .text-label{
+    margin-top: 12px;
+    width: 185px;
+}
+
+.judul-inovasi, .kata-kunci{
+    margin-bottom: 20px;
+}
+
+.input-inovasi{
+    display: flex;
+    flex-direction: row;
+    row-gap: 12px;
+    width: 1120px;
+    height: 40px;
+
+    margin: 12px 50px 12px 0;
+}
+
+.judul-inovasi , .kata-kunci{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.pembuatan-inovasi .text-label{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    width: 100%;
+    height: 1275px;
+
+    display: flex;
+    padding: 18px;
+    margin: 24px;
+    row-gap: 120px;
+
+    border-radius: 10px;
+    background-color: var(--BG_Input_NonAktif);
+    border: solid 2px var(--BG_Input_NonAktif);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-size: 18px;
+    color: var(--Input_Placholder);
+    
+    outline-style: none;
+    transition: all ease-in-out 175ms;  
+}
+
+.membuat-bawah{
+    margin-top: 24px;
+
+    font-family: Bold;
+}
+
+.button-unggah, .button-posting{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--BG_Button_Normal);
+    color: var(--Teks_Button);
+    box-shadow: 7px 7px 5px lightgrey;
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+    padding: 8px;
+
+    font-family: Bold;
+    font-size: 20px;
+    text-align: center;
+
+    transition: all ease-in-out 175ms;
+    cursor: pointer;
+}
+
+.button-posting{
+    margin-left: 920px;
+}
